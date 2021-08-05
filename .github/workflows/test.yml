@@ -12,6 +12,8 @@ jobs:
   test:
     runs-on: [ubuntu-latest]
     steps:
+    - name: Check-out code
+      uses: actions/checkout@v2
     - uses: antoninbas/review-manager@main
       with:
         area_ownership_file: 'AREA-OWNERS'
