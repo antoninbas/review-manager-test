@@ -3,7 +3,7 @@ on:
   pull_request:
     branches:
     - main
-    types: ["opened", "labeled", "ready_for_review", "review_request_removed"]
+    types: ["opened", "synchronized", "reopened", "labeled", "ready_for_review", "review_request_removed"]
   pull_request_review:
     branches:
     - main
