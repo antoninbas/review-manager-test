@@ -10,6 +10,8 @@ on:
 
 jobs:
   test:
-  - uses: antoninbas/review-manager@main
-    with:
-      area_ownership_file: 'AREA-OWNERS'
+    runs-on: [ubuntu-latest]
+    steps:
+    - uses: antoninbas/review-manager@main
+      with:
+        area_ownership_file: 'AREA-OWNERS'
