@@ -16,4 +16,5 @@ jobs:
       uses: actions/checkout@v2
     - uses: antoninbas/review-manager@main
       with:
+        token: ${{ secrets.GITHUB_TOKEN }}
         area_ownership_file: 'AREA-OWNERS'
